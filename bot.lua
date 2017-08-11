@@ -2,19 +2,18 @@ package.path = package.path .. ';.luarocks/share/lua/5.2/?.lua'
 .. ';.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
--- @MuteTeam
+-- @D_1_T
 http = require("socket.http")
 https = require("ssl.https")
 http.TIMEOUT = 10
 JSON = require('dkjson')
--------@MuteTeam
+-------@D_1_T
 tdcli = dofile('tdcli.lua')
 redis = (loadfile "./libs/redis.lua")()
 serpent = require('serpent')
 serp = require 'serpent'.block
 sudo_users = {
-  238773538,
-  173606679,
+  244252169,
   0
 }
 
@@ -1199,7 +1198,7 @@ if redis:get('edittg:'..data.chat_id_) then
 end 
   elseif (data.ID == "UpdateOption" and data.name_ == "my_id") then
 	
-    -- @MuteTeam
+    -- @d_1_t
     tdcli_function ({
       ID="GetChats",
       offset_order_="9223372036854775807",
